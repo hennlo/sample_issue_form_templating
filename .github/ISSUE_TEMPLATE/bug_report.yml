@@ -8,6 +8,7 @@ body:
       value: |
         Before opening a bug report, please search for the behaviour in the existing issues. 
         ---
+        
         For questions, the best place to get answers is on our [discussion forum](https://github.com/polypheny/Polypheny-DB/discussions), as they will get more visibility from experienced users than the issue tracker.
         ---
         
