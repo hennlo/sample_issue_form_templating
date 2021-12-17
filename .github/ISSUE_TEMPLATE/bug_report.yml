@@ -37,7 +37,7 @@ body:
         - label: Linux
         - label: Windows
         - label: macOS
-    multiple: true
+    multiple : true
     validations:
       required: true
   - type: input
