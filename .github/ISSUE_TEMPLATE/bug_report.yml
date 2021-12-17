@@ -1,5 +1,5 @@
 name: 🐞 Bug Report
-description: File a bug report
+description: Let us know about a bug and help us improve!
 title: "[Bug]: "
 labels: ["bug", "triage"]
 body:
@@ -7,18 +7,37 @@ body:
     attributes:
       value: |
         Before opening a bug report, please search for the behaviour in the existing issues. 
-        
+        For questions, the best place to get answers is on our [discussion forum](https://github.com/polypheny/Polypheny-DB/discussions), as they will get more visibility from experienced users than the issue tracker.
         ---
         
         Thank you for taking the time to file a bug report. To address this bug as fast as possible, we need some information.
   - type: input
-    id: os
+    id: system-os
     attributes:
-      label: Operating system
+      label: System Operating System
       description: "Which operating system do you use? Please provide the version as well."
       placeholder: "macOS Big Sur 11.5.2"
     validations:
       required: true  
+  - type: input
+    id: client-os
+    attributes:
+      label: Client Operating System
+      description: "Which operating system do you use? Please provide the version as well."
+      placeholder: "macOS Big Sur 11.5.2"
+    validations:
+      required: true
+  - type: checkboxes
+    id: os
+    attributes:
+      label: Operating System
+      description: "Which operating system do you use? "
+      options:
+        - label: Linux
+        - label: Windows
+        - label: macOS
+    validations:
+      required: true
   - type: input
     id: laravel
     attributes:
@@ -36,14 +55,19 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: location
+    id: area
     attributes:
-      label: Project Location
-      description: Where is the project located?
+      label: Affected Area
+      description: Which area of the project is affected
       options:
-        - Local
-        - Remote
-        - Somewhere else (please specify in the description!)
+        - DB
+        - UI
+        - Control
+        - Client
+        - Website
+        - JDBC
+        - Python
+        - Somethin else (please specify in the description!)
     validations:
       required: true
   - type: textarea
