@@ -67,10 +67,9 @@ body:
       required: true
   - type: textarea
     id: bug-description
-    description: If applicable, add screenshots and any other context about the problem or additional supporting information here.
     attributes:
       label: Bug description
-      description: What happened?
+      description: What happend? If applicable, add screenshots and any other context about the problem or additional supporting information here.
     validations:
       required: true
   - type: textarea
