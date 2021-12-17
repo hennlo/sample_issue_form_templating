@@ -7,6 +7,7 @@ body:
     attributes:
       value: |
         Before opening a bug report, please search for the behaviour in the existing issues. 
+        |
         For questions, the best place to get answers is on our [discussion forum](https://github.com/polypheny/Polypheny-DB/discussions), as they will get more visibility from experienced users than the issue tracker.
         ---
         
@@ -15,7 +16,7 @@ body:
     id: system-os
     attributes:
       label: System Operating System
-      description: "Which operating system do you use? Please provide the version as well."
+      description: "Which operating system do you use to run Polyphney-DB? Please provide the version as well."
       placeholder: "macOS Big Sur 11.5.2"
     validations:
       required: true  
@@ -27,7 +28,7 @@ body:
       placeholder: "macOS Big Sur 11.5.2"
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
     id: os
     attributes:
       label: Operating System
@@ -36,29 +37,22 @@ body:
         - label: Linux
         - label: Windows
         - label: macOS
+    multiple: true
     validations:
       required: true
   - type: input
-    id: laravel
+    id: polypheny-db-version
     attributes:
-      label: Laravel Version
-      description: "Please provide the full Laravel version of your project."
-      placeholder: "v8.6.1"
-    validations:
-      required: true
-  - type: input
-    id: php
-    attributes:
-      label: PHP Version
-      description: "Please provide the full PHP version that is powering Tinkerwell."
-      placeholder: "PHP 8.0.7, built: Jun  4 2021 01:50:04"
+      label: Polypheny-DB Version
+      description: "Please provide the full Polypheny-DB version of your project."
+      placeholder: "v0.7.1"
     validations:
       required: true
   - type: dropdown
     id: area
     attributes:
-      label: Affected Area
-      description: Which area of the project is affected
+      label: Affected Areaa
+      description: Which areas of the project are affected
       options:
         - DB
         - UI
@@ -67,7 +61,8 @@ body:
         - Website
         - JDBC
         - Python
-        - Somethin else (please specify in the description!)
+        - Something else (please specify in the description!)
+    multiple: true
     validations:
       required: true
   - type: textarea
