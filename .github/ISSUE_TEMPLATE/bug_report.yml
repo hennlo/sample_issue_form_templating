@@ -1,13 +1,13 @@
 name: 🐞 Bug Report
 description: Let us know about a bug and help us improve!
 title: "[Bug]: "
-labels: ["bug", "triage"]
+labels: ["bug", "enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
         Before opening a bug report, please search for the behaviour in the existing issues. 
-        |
+        ---
         For questions, the best place to get answers is on our [discussion forum](https://github.com/polypheny/Polypheny-DB/discussions), as they will get more visibility from experienced users than the issue tracker.
         ---
         
@@ -67,6 +67,7 @@ body:
       required: true
   - type: textarea
     id: bug-description
+    description: If applicable, add screenshots and any other context about the problem or additional supporting information here.
     attributes:
       label: Bug description
       description: What happened?
@@ -75,7 +76,7 @@ body:
   - type: textarea
     id: steps
     attributes:
-      label: Steps to reproduce
+      label: Reproduction Steps
       description: Which steps do we need to take to reproduce this error?
   - type: textarea
     id: logs
