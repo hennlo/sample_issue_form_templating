@@ -1,6 +1,6 @@
 name: 🐞 Bug Report
 description: Let us know about a bug and help us improve!
-title: "[Bug]: "
+title: "[BUG]: "
 labels: ["bug", "enhancement"]
 body:
   - type: markdown
