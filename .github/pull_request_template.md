@@ -13,26 +13,22 @@ Please concisely describe the introduced changes and implementations.
 
 ### Changes
 If applicable list all changes you introduced to the current architecture and list how the behaviour has changed.
-* First
-* Second
+* 
 * ...
 
 ### Features
 List any new introduced features
-* First
-* Second
+* 
 * ...
 
 ### Bug Fixes
 All related Bug fixes 
-* First
-* Second
+* 
 * ...
 
 ### Tests
 Summarize the introduced test capabilities for your feature.
-* First
-* Second
+* 
 * ...
 
 
