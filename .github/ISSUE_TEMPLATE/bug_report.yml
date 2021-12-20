@@ -77,3 +77,29 @@ body:
     attributes:
       value:
         ---
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug description
+      description: What happend? If applicable, add screenshots and any other context about the problem or additional supporting information here.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction Steps
+      description: Which steps do we need to take to reproduce this error?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: If applicable, provide relevant log output. No need for backticks here.
+      render: shell
