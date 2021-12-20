@@ -92,10 +92,10 @@ body:
     validations:
       required: true
  - type: textarea
-    id: expected
-    attributes:
+   id: expected
+   attributes:
       label: Expected Behavior
-    validations:
+   validations:
       required: true
   - type: textarea
     id: logs
