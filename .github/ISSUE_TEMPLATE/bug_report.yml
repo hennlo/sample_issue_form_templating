@@ -18,7 +18,7 @@ body:
     id: os
     attributes:
       label: Operating System (Polypheny-DB)
-      description: "On which operating system is Polyphemy? "
+      description: "On which operating system is Polypheny-DB running? "
       multiple: true
       options:
         - Linux
@@ -30,7 +30,7 @@ body:
     id: polypheny-db-version
     attributes:
       label: Polypheny-DB Version
-      description: "Please provide the full Polypheny-DB version of your project. Or if you are in a dev environemnt your commit"
+      description: "Please provide the full Polypheny-DB version of your project. Or if you are in a dev environment your commit"
       placeholder: "v0.7.1"
     validations:
       required: true
@@ -77,29 +77,3 @@ body:
     attributes:
       value:
         ---
-  - type: textarea
-    id: bug-description
-    attributes:
-      label: Bug description
-      description: What happend? If applicable, add screenshots and any other context about the problem or additional supporting information here.
-    validations:
-      required: true
-  - type: textarea
-    id: steps
-    attributes:
-      label: Reproduction Steps
-      description: Which steps do we need to take to reproduce this error?
-    validations:
-      required: true
- - type: textarea
-   id: expected
-   attributes:
-      label: Expected Behavior
-   validations:
-      required: true
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: If applicable, provide relevant log output. No need for backticks here.
-      render: shell
