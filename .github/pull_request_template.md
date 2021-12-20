@@ -23,7 +23,6 @@ List any new introduced features
 
 ### Bug Fixes
 All related Bug fixes 
-* 
 * ...
 
 ---
