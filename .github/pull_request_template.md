@@ -13,12 +13,12 @@ Please concisely describe the introduced changes and implementations.
 
 ### Changes
 If applicable list all changes you introduced to the current architecture and list how the behaviour has changed.
-* 
 * ...
+
+---
 
 ### Features
 List any new introduced features
-* 
 * ...
 
 ### Bug Fixes
@@ -26,12 +26,13 @@ All related Bug fixes
 * 
 * ...
 
+---
+
 ### Tests
 Summarize the introduced test capabilities for your feature.
-* 
 * ...
 
-
+---
 
 ### ToDo
 <!-- For WIP PR add meanigful todos -->
