@@ -1,6 +1,6 @@
 name: 🐞 Bug Report
 description: Let us know about a bug and help us improve!
-title: "[BUG]: "
+title: ""
 labels: ["bug", "enhancement"]
 body:
   - type: markdown
@@ -15,39 +15,23 @@ body:
         Thank you for taking the time to file a bug report. To address this bug as fast as possible, we need some information.
         
         ---
-  - type: input
-    id: system-os
-    attributes:
-      label: System Operating System
-      description: "Which operating system do you use to run Polyphney-DB? Please provide the version as well."
-      placeholder: "Linux Manjaro 21.1.6.2"
-    validations:
-      required: true  
-  - type: input
-    id: client-os
-    attributes:
-      label: Client Operating System
-      description: "Which operating system do you use? Please provide the version as well."
-      placeholder: "macOS Big Sur 11.5.2"
-    validations:
-      required: true
   - type: dropdown
     id: os
     attributes:
-      label: Operating System
-      description: "Which operating system do you use? "
+      label: Operating System (Polypheny-DB)
+      description: "On which operating system is Polyphemy? "
       multiple: true
       options:
         - Linux
         - Windows
         - macOS
     validations:
-      required: true
+      required: false
   - type: input
     id: polypheny-db-version
     attributes:
       label: Polypheny-DB Version
-      description: "Please provide the full Polypheny-DB version of your project."
+      description: "Please provide the full Polypheny-DB version of your project. Or if you are in a dev environemnt your commit"
       placeholder: "v0.7.1"
     validations:
       required: true
@@ -68,6 +52,28 @@ body:
         - Something else (please specify in the description!)
     validations:
       required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: "Which browser did you use to connect to the system? Only apply if aplicable."
+      multiple: true
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Opera
+    validations:
+      required: false
+  - type: input
+    id: client-os
+    attributes:
+      label: Client Operating System
+      description: "Which operating system do you use? Please provide the version as well."
+      placeholder: "macOS Big Sur 11.5.2"
+    validations:
+      required: false
   - type: markdown
     attributes:
       value:
@@ -84,6 +90,14 @@ body:
     attributes:
       label: Reproduction Steps
       description: Which steps do we need to take to reproduce this error?
+    validations:
+      required: true
+ - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
   - type: textarea
     id: logs
     attributes:
